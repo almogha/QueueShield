@@ -4,11 +4,6 @@ name: Run Docker Container Daily
 on:
   schedule:
     - cron: '0 0 * * *'
-    
-#### test
-  push:
-    branches:
-      - main    # Trigger on push to main branch
 
 jobs:
   run-docker-container:
