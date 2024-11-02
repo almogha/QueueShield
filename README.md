@@ -49,6 +49,7 @@ Ensure that:
    Example (Unix-based systems):
    ```bash
    export S3_BUCKET_NAME=your-s3-bucket-name
+   export AWS_DEFAULT_REGION=your-default-region
    export AWS_ACCOUNT_ID=your-account-id
    export MODE=log  # or MODE=update for policy updates
    ```
