@@ -1,9 +1,14 @@
 name: Run Docker Container Daily
 
 # Schedule the workflow to run at 00:00 UTC every day
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'
+
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   run-docker-container:
